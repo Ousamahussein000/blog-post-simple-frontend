@@ -1,0 +1,442 @@
+body {
+
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Fredoka', sans-serif;
+}
+
+nav {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+
+}
+
+.navbar {
+    background-color: transparent !important;
+    color: black !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: 10vh;
+}
+
+nav .navbar-brand {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: black;
+    border-radius: 5px;
+}
+
+.hero-contents p {
+    max-width: 600px;
+    /* controls how wide the paragraph can be */
+    margin: 0 auto;
+    /* centers it */
+    font-size: 1.1rem;
+    /* optional */
+    line-height: 1.6;
+    /* optional: makes it pretty */
+}
+
+
+.nav-links ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links ul li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.3s ease;
+}
+
+
+.hero-contents {
+    text-align: center;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 250px;
+    background-image: url("../images/backgroundcolorsimage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-box {
+    transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+.hero-contents h1 {
+    font-size: 80px;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+
+.hero-contents button {
+    background-color: plum;
+    color: black;
+    ;
+    border: none;
+    width: 300px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.button2 {
+    background: linear-gradient(135deg, #ffffff 0%, #e6d9ff 40%, #bcd5ff 100%);
+    color: black !important;
+}
+
+.button1:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.button2:hover {
+    background-color: #ffffffd9;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.card {
+    height: 100%;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.cards-container {
+    max-width: 1000px;
+    /* prevents stretching */
+    margin: 0 auto;
+    /* centers the entire card grid */
+
+}
+
+#blogs {
+    text-align: center;
+}
+
+#about {
+    width: 100%;
+    background-image: url("../images/backgroundcolorsimage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 80px 0;
+    /* gives space for the text */
+}
+
+.partners {
+    text-align: center;
+}
+
+.partner-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+#about p {
+    max-width: 800px;
+    margin: 20px auto 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.view-button {
+    background-color: plum;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+
+    width: 60%;
+    /* smaller */
+    display: block;
+    /* allows margin auto */
+    margin-left: auto;
+    margin-right: auto;
+    /* centers the button */
+}
+
+.view-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+:root {
+    --max-width: 760px;
+    --accent: plum;
+    /* pink */
+    --accent-dark: plum;
+    --muted: #6b6b6b;
+    --card-bg: rgba(255, 255, 255, 0.85);
+    --glass-blur: 8px;
+    --radius: 12px;
+    --font: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: var(--font);
+    background: #fff;
+}
+
+/* uses the generated background image you have locally */
+#contact {
+    background-image: url("../images/backgroundcolorsimage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 80px 20px;
+}
+
+.contact-wrapper {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    padding: 36px;
+    box-shadow: 0 10px 30px rgba(16, 24, 40, 0.08);
+    backdrop-filter: blur(var(--glass-blur));
+    text-align: center;
+}
+
+.contact-wrapper h2 {
+    margin: 0 0 8px;
+    font-size: 2rem;
+    letter-spacing: 0.6px;
+    color: #222;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.contact-wrapper .lead {
+    margin: 0 0 24px;
+    color: var(--muted);
+}
+
+form {
+    text-align: left;
+}
+
+.field-row {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    color: #333;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: #fff;
+    outline: none;
+    transition: box-shadow .18s ease, border-color .18s ease;
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: 0 6px 18px rgba(90, 70, 200, 0.06);
+    border-color: var(--accent-dark);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+.btn-send {
+    display: inline-block;
+    background: linear-gradient(90deg, var(--accent), var(--accent-dark));
+    color: #111;
+    border: none;
+    padding: 12px 28px;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform .12s ease, box-shadow .12s ease;
+}
+
+.btn-send:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(95, 30, 148, 0.12);
+}
+
+.form-feedback {
+    margin-top: 12px;
+    color: #114b5f;
+    font-weight: 500;
+}
+
+
+
+
+
+/* small screens */
+@media (max-width:600px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background: #007bff;
+        flex-direction: column;
+        width: 220px;
+        padding: 20px;
+        border-radius: 10px;
+        gap: 15px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .contact-wrapper {
+        padding: 22px;
+        border-radius: 10px;
+    }
+
+    .btn-send {
+        width: 100%;
+        text-align: center;
+    }
+
+    .partner-img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .hero-contents h1 {
+        font-size: 45px;
+    }
+
+    .hero-contents p {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+
+    .hero-contents button {
+        width: 80%;
+        margin-top: 15px;
+    }
+
+    .view-button {
+        width: 80%;
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+
+    .about-section p {
+        padding: 0 15px;
+        font-size: 1rem;
+    }
+
+    .card {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .row {
+        justify-content: center;
+    }
+
+
+    .contact-wrapper h2 {
+        font-size: 1.6rem;
+    }
+
+    .contact-section {
+        padding: 40px 10px;
+    }
+
+    textarea {
+        min-height: 120px;
+    }
+}
+
+
+
+
+
+@media(max-width: 480px) {
+    .card {
+        max-width: 240px;
+    }
+}
